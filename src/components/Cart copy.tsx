@@ -15,7 +15,7 @@ const Cart = () => {
     decrementQuantity(productId);
 
     const product = cart.find((item: Product) => item.id === productId);
-    if (product && product.quantity == Number(0)) {
+    if (product && product.quantity == 0) {
       removeFromCart(productId);
     }
   };
